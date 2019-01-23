@@ -1,0 +1,20 @@
+<div class="container">
+  <table class="table table-hover">
+    <thead>
+      <tr class="table-active">
+        <th>Nombre</th>
+        <th>Edad</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @young_students.each do |young| %>
+      <tr>
+        <td><%= young.name %></td>
+        <td><%= young.age %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <h1>El número de estudiantes menores de edades es <%= @young_students.size %></h1>  
+</div>
